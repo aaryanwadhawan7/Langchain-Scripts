@@ -1,0 +1,2 @@
+SystemMessage(content="Hi, hope I'll be helpfull with your Generative AI project."), 
+HumanMessage(content='Can you give me roadmap for learning Langchain')
