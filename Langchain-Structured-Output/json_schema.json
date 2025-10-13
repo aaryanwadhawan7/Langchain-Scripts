@@ -1,0 +1,36 @@
+{
+  "title": "ReviewAnalysis",
+  "type": "object",
+  "properties": {
+    "key_themes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Write down all the key themes mentioned in the user review"
+    },
+    "summary": {
+      "type": "string",
+      "description": "Generate the summary of the review"
+    },
+    "sentiment": {
+      "type": "string",
+      "enum": ["Positive", "Negative"],
+      "description": "What is the sentiment behind the user review"
+    },
+    "pros": {
+      "type": ["array", "null"],
+      "items": { "type": "string" },
+      "description": "Generate the pros mentioned by the user in the review"
+    },
+    "cons": {
+      "type": ["array", "null"],
+      "items": { "type": "string" },
+      "description": "Generate the cons mentioned by the user in the review"
+    },
+    "name": {
+      "type": ["string", "null"],
+      "description": "What is the name of the reviewer"
+    }
+  },
+  "required": ["key_themes", "summary", "sentiment"],
+  "additionalProperties": false
+}
