@@ -4,7 +4,7 @@ from langchain_core.prompts import PromptTemplate
 import os
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnableParallel, RunnableBranch
-## Runnable Lambda -> wrap any python callable 
+## Runnable Lambda -> wrap any ~python callable 
 
 load_dotenv()
 
