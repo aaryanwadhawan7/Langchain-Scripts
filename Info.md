@@ -90,3 +90,56 @@
   ### Message Placeholder
 
   - If we want to insert messages dynamically inside ChatPromptTemplate then we will use Message Placeholder
+
+  ***
+
+  ### Runnables in Langchain
+
+  - Unit of Work
+
+    - Input
+    - Process
+    - Output
+
+  - Common Interface
+
+    - invoke()
+
+    - batch()
+
+```python
+from langchain.chat_models import ChatOpenAI
+
+# Initialize the model
+model = ChatOpenAI()
+
+# Prepare a batch of prompts
+prompts = [
+    "Tell me a joke.",
+    "What's the weather like today?",
+    "Explain quantum computing in simple terms."
+]
+
+# Use batch to process all prompts at once
+results = model.batch(prompts)
+
+for response in results:
+    print(response)
+
+```
+
+    - stream()
+
+```python
+from langchain.chat_models import ChatOpenAI
+
+model = ChatOpenAI()
+
+prompt = "Generate a short story about brave knight?"
+
+for tokens in model.stream(prompt):
+     print (tokens, end = "", flush=True)
+
+```
+
+- Connect
