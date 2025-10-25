@@ -29,3 +29,4 @@ grandalf
 
 langchain_community
 pypdf
+beautifulsoup4

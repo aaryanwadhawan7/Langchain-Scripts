@@ -36,4 +36,8 @@ parser = StrOutputParser()
 chain = prompt | llm | parser
 
 result = chain.invoke({'text' : docs[0]})
-print (result)
+## print (result)
+## print (type (docs))
+
+print (type (docs[0]))
+## <class 'langchain_core.documents.base.Document'>
