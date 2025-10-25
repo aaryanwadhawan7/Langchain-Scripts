@@ -12,3 +12,7 @@ docs = loader.load()
 
 print (type (docs[0]))
 ## <class 'langchain_core.documents.base.Document'>
+
+## print (docs[0].page_content)
+
+print (docs[0].metadata['source'])

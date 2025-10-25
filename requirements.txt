@@ -28,3 +28,4 @@ scikit-learn
 grandalf
 
 langchain_community
+pypdf
