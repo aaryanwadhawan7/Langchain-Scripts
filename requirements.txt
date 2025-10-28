@@ -30,3 +30,7 @@ grandalf
 langchain_community
 pypdf
 beautifulsoup4
+
+chromadb
+tiktoken
+chroma

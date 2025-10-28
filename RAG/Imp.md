@@ -22,6 +22,37 @@ Document(page_content = 'Text from page 2', metadata = {'page' : 1, "source" : "
 
 #### Text Splitters
 
-#### Vector Databases
+#### Vector Store (Storage + Retrieval)
+
+- Task
+
+  - Generate vector embeddings
+  - Store
+  - Semantic Search
+
+- Key Features
+
+  - Storage (In-memory [RAM] and On-disk [Harddrive])
+  - Similarity Search (Semantic Search)
+  - Indexing (Clustering)
+
+- Vector Store VS Vector Database
+  - VS (Storage & Retrieval)
+  - VD (VS + [Additional Features])
+    - Distributed Architecture for auto-scaling
+    - Durability and Persistence
+    - Metadata handling
+    - ACID Transactions
+    - Authentication / Authorization
+
+```python
+from_documents(...) or from_text(...),
+add_documents(...) or add_text(...),
+similarity_search(query, k =...),
+Metadata-Based Filtering
+```
+
+- Chroma Hierarchy
+  [User -> Database -> Collection -> Doc (Embedding + Metadata)]
 
 #### Retrievers
