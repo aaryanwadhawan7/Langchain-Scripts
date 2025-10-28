@@ -34,3 +34,4 @@ beautifulsoup4
 chromadb
 tiktoken
 chroma
+sentence-transformers
