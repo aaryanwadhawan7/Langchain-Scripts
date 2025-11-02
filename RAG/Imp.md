@@ -1,5 +1,7 @@
 ### RAG
 
+---
+
 #### Document Loaders
 
 ```python
@@ -21,6 +23,8 @@ Document(page_content = 'Text from page 2', metadata = {'page' : 1, "source" : "
 ---
 
 #### Text Splitters
+
+---
 
 #### Vector Store (Storage + Retrieval)
 
@@ -55,4 +59,9 @@ Metadata-Based Filtering
 - Chroma Hierarchy
   [User -> Database -> Collection -> Doc (Embedding + Metadata)]
 
+---
+
 #### Retrievers
+
+- Runnable : It has access to invoke function
+- Retrievers are classified based on the type of data source and search strategy
