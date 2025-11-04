@@ -35,3 +35,5 @@ chromadb
 tiktoken
 chroma
 sentence-transformers
+
+wikipedia 
