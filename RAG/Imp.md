@@ -65,3 +65,4 @@ Metadata-Based Filtering
 
 - Runnable : It has access to invoke function
 - Retrievers are classified based on the type of data source and search strategy
+-
